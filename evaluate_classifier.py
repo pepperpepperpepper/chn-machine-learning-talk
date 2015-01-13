@@ -17,5 +17,5 @@ if __name__ == '__main__':
     nb_classifier.train(training_data)
 
     for filename in test:
-        print nb_classifier.classify(features_from_file(os.path.join(ROOT_DIR, 'data', 'emails', filename)))
+        print nb_classifier.classify(features_from_file(os.path.join(ROOT_DIR, 'data', 'emails', filename)), '0', '1')
     
